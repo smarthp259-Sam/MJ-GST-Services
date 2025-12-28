@@ -2,174 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MJS GST Consultancy Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Segoe UI", sans-serif;
-        }
-
         body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
             background: #f4f7fb;
             color: #222;
-            line-height: 1.6;
-            overflow-y: auto;
         }
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* HEADER */
         header {
-            background: linear-gradient(135deg, #0d47a1, #1976d2);
-            color: #fff;
-            padding: 60px 20px;
-        }
-
-        .hero {
-            max-width: 1100px;
-            margin: auto;
+            background: linear-gradient(135deg, #0a3d91, #0f5fc0);
+            color: white;
+            padding: 60px 10%;
             display: flex;
             align-items: center;
             gap: 40px;
             flex-wrap: wrap;
         }
 
-        .hero img {
-            width: 220px;
-            height: 220px;
+        .profile-pic {
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             border: 6px solid #fff;
             object-fit: cover;
+            background: #fff;
         }
 
         .hero-text h1 {
-            font-size: 34px;
-            margin-bottom: 10px;
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
         }
 
         .hero-text h2 {
-            font-size: 20px;
+            margin: 5px 0;
             font-weight: 400;
-            margin-bottom: 10px;
-            opacity: 0.9;
+            font-size: 20px;
         }
 
         .hero-text p {
-            margin-bottom: 20px;
+            margin: 8px 0;
             font-size: 16px;
-            opacity: 0.9;
         }
 
-        .btn {
+        .cta {
             display: inline-block;
+            margin-top: 15px;
             background: #ffc107;
             color: #000;
-            padding: 12px 24px;
-            border-radius: 30px;
+            padding: 12px 22px;
+            border-radius: 6px;
+            text-decoration: none;
             font-weight: 600;
-            transition: 0.3s;
         }
 
-        .btn:hover {
-            background: #ffb300;
-        }
-
-        /* SECTION */
         section {
-            padding: 60px 20px;
-        }
-
-        .container {
+            padding: 50px 10%;
+            background: white;
+            margin: 30px auto;
             max-width: 1100px;
-            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
 
-        h3.section-title {
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 40px;
-            color: #0d47a1;
+        h3 {
+            color: #0a3d91;
+            margin-bottom: 20px;
+            font-size: 26px;
         }
 
-        /* ABOUT */
-        .about p {
-            text-align: center;
-            max-width: 900px;
-            margin: auto;
-            font-size: 17px;
+        ul {
+            padding-left: 20px;
         }
 
-        /* SERVICES */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-        }
-
-        .service-card {
-            background: #fff;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-6px);
-        }
-
-        .service-card h4 {
-            color: #1976d2;
+        li {
             margin-bottom: 10px;
         }
 
-        /* WHY US */
-        .why ul {
-            list-style: none;
-            max-width: 700px;
-            margin: auto;
+        .contact a {
+            display: block;
+            margin-bottom: 10px;
+            color: #0a3d91;
+            text-decoration: none;
+            font-weight: 500;
         }
 
-        .why ul li {
-            background: #fff;
-            margin-bottom: 15px;
-            padding: 15px 20px;
-            border-radius: 10px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.07);
-        }
-
-        /* CONTACT */
-        .contact-box {
-            background: #0d47a1;
-            color: #fff;
-            padding: 40px;
-            border-radius: 20px;
-            text-align: center;
-        }
-
-        .contact-box p {
-            margin: 10px 0;
-            font-size: 17px;
-        }
-
-        .contact-box a {
-            color: #ffc107;
-            font-weight: 600;
-        }
-
-        /* FOOTER */
         footer {
-            background: #0a2f66;
-            color: #fff;
             text-align: center;
             padding: 20px;
+            background: #0a3d91;
+            color: white;
             font-size: 14px;
         }
     </style>
@@ -178,100 +110,36 @@
 <body>
 
 <header>
-    <div class="hero">
-        <img src="images/profile.jpg" alt="Adv. Sumit Bharadwaj">
-        <div class="hero-text">
-            <h1>MJS GST Consultancy Services</h1>
-            <h2>Adv. Sumit Bharadwaj</h2>
-            <p>Advocate & GST Consultant<br>Palwal & Faridabad</p>
+    <!-- PROFILE IMAGE -->
+    <img src="profile.jpg" alt="Adv. Sumit Bharadwaj" class="profile-pic">
 
-            <a class="btn" 
-               href="https://wa.me/919817600945?text=Hello%20I%20need%20GST%20consultancy">
-               Contact for Pricing
-            </a>
-        </div>
+    <div class="hero-text">
+        <h1>MJS GST Consultancy Services</h1>
+        <h2>Adv. Sumit Bharadwaj</h2>
+        <p>Advocate & GST Consultant</p>
+        <p><i class="fa-solid fa-location-dot"></i> Palwal & Faridabad</p>
+
+        <a class="cta" href="https://wa.me/919817600945" target="_blank">
+            Contact for Pricing
+        </a>
     </div>
 </header>
 
-<section class="about">
-    <div class="container">
-        <h3 class="section-title">About Us</h3>
-        <p>
-            MJS GST Consultancy Services provides end-to-end GST compliance and
-            legal support to businesses and professionals. With an advocate-led
-            approach, we ensure accurate filings, timely compliance, and
-            professional handling of GST notices and proceedings.
-        </p>
-    </div>
-</section>
-
 <section>
-    <div class="container">
-        <h3 class="section-title">Our GST Services</h3>
-
-        <div class="services-grid">
-            <div class="service-card">
-                <h4>GST Registration</h4>
-                <p>New registration, amendment, and surrender of GST registration.</p>
-            </div>
-
-            <div class="service-card">
-                <h4>GST Returns</h4>
-                <p>GSTR-1, GSTR-3B, annual returns with complete accuracy.</p>
-            </div>
-
-            <div class="service-card">
-                <h4>GST Notices & Proceedings</h4>
-                <p>Professional reply drafting and representation before authorities.</p>
-            </div>
-
-            <div class="service-card">
-                <h4>Cancellation & Revocation</h4>
-                <p>Handling cancellation orders and revocation applications.</p>
-            </div>
-
-            <div class="service-card">
-                <h4>GST Consultancy</h4>
-                <p>Practical advisory for businesses & professionals.</p>
-            </div>
-        </div>
-    </div>
+    <h3>Our Services</h3>
+    <ul>
+        <li>GST Registration & Amendment</li>
+        <li>GST Returns – GSTR-1, GSTR-3B, GSTR-9</li>
+        <li>GST Notices, Replies & Proceedings</li>
+        <li>GST Cancellation & Revocation</li>
+        <li>GST Consultancy for Businesses & Professionals</li>
+    </ul>
 </section>
 
-<section class="why">
-    <div class="container">
-        <h3 class="section-title">Why Choose Us</h3>
-        <ul>
-            <li>✔ Advocate-led professional GST services</li>
-            <li>✔ Timely compliance & transparent process</li>
-            <li>✔ Dedicated support for small businesses</li>
-            <li>✔ Affordable & practical solutions</li>
-        </ul>
-    </div>
-</section>
+<section class="contact">
+    <h3>Contact Details</h3>
 
-<section>
-    <div class="container">
-        <h3 class="section-title">Contact Us</h3>
+    <a href="tel:9817600945"><i class="fa-solid fa-phone"></i> 9817600945</a>
+    <a href="tel:8053504965"><i class="fa-solid fa-phone"></i> 8053504965</a>
 
-        <div class="contact-box">
-            <p>📞 <a href="tel:9817600945">9817600945</a> | <a href="tel:8053504965">8053504965</a></p>
-            <p>📧 <a href="mailto:pandatsammi@gmail.com">pandatsammi@gmail.com</a></p>
-            <p>📍 Palwal & Faridabad</p>
-
-            <br>
-
-            <a class="btn" 
-               href="https://wa.me/918053504965?text=Hello%20I%20need%20GST%20services">
-               WhatsApp Now
-            </a>
-        </div>
-    </div>
-</section>
-
-<footer>
-    © 2025 MJS GST Consultancy Services | All Rights Reserved
-</footer>
-
-</body>
-</html>
+    <a href="ma
